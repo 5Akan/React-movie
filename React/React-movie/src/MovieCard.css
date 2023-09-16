@@ -4,16 +4,28 @@
     width: 13rem;
     margin-right: 1.6rem;
     margin-bottom: 1.5rem;
-    background-color: rgb(29, 241, 142);
+    background-color: rgb(153, 241, 29);
     overflow: hidden;
+    text-decoration: none;
 }
 .poster img{
     max-width: 15rem;
     max-height: 20rem;
+    margin: auto;
 }
 .info{
     display: flex;
     justify-content: space-between;
+    padding: 0.5rem;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none; 
+    color: black;
+}
+.details{
+    display: flex;
     padding: 0.5rem;
     
 }
@@ -29,9 +41,18 @@
     overflow: auto;
     margin-top: 3rem;
     border-radius: 2rem;
-    transition: 0.3s ease-in-out;
+
+}
+.button{
+    padding: 0.6rem;
+    background-color: rgb(153, 241, 29);
+    color: white;
+    border:2px  solid rgb(73, 164, 73);
+}
+.search{
+    padding: 0.2rem;
+    background-color: rgb(153, 241, 29);
+    color: white;
+    border:2px  solid rgb(73, 164, 73);
 }
 
-.card:hover .overview{
-    transform: translateY(0%);
-}

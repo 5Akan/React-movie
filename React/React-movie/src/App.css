@@ -5,7 +5,7 @@
 }
 .App{
     padding: 1.5rem;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .movies{
     display: flex;
