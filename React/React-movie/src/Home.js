@@ -86,7 +86,14 @@ import { MovieCard } from './MovieCard';
 
         <div className='movies'>
           {movies.slice(0,10).map((movie)=>
-            <MovieCard key ={movie.id} poster_path = {movie.poster_path} id = {movie.id} title = {movie.title} release_date= {movie.release_date} overview ={movie.overview} vote_average ={movie.vote_average} tagline ={movie.tagline}tagline/>)
+            <MovieCard key ={movie.id}
+             poster_path = {movie.poster_path}
+              id = {movie.id}
+              title = {movie.title}
+              release_date= {movie.release_date}
+              overview ={movie.overview}
+              vote_average ={movie.vote_average} 
+              runtime={movie.runtime}/>)
           }
         </div>
   </div>

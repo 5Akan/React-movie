@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import Home from './Home';
 import {
@@ -7,7 +6,6 @@ import {
   RouterProvider,
   Route
 } from "react-router-dom";
-// import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import { Details } from './Details';
 import React from 'react';
 const router = createBrowserRouter(
@@ -21,17 +19,6 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  
-
-   
-//   const click = color =>{
-//     setColor(color)
-// }
-// useEffect(()=>{
-//     document.body.style.backgroundColor = color;
-// },[color])
-
-
   return(
     <div>
        

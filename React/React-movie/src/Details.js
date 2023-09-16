@@ -20,10 +20,6 @@ export const Details = () => {
               Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZjVmODJiMWNlMjA3NDNlMDAzMmI3ZDg3N2ZmMjBmZCIsInN1YiI6IjY1MDA2YmNjZmZjOWRlMGVkZWQ0MzJmMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RgJJVCPuJuMzSqCh_esnCWfHRDADzTynhvUsx3jkaHI'
             }
           };
-         //  How to do a .amv file
-         //React Router version 6
-         //Crash course travesy,webdev
-         //Free code camp
           fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US`, options)
             .then(response => response.json())
          .then(response =>{setDetails(response);setIsPending(false);})
@@ -37,14 +33,12 @@ export const Details = () => {
 
     return(
       <div>
-       <h1>{details.title}</h1>
-       <p className='release'>Release Date: {details.release_date}</p>
-       <p className='vote'>Rating: {details.vote_average}</p>
-          <img src= {IMGPATH + details.poster_path}/>
-          <p className='tagline'> {details.tagline}</p>
+       <h1 data-testid = "movie-title">{details.title}</h1>
+       <p className='release' data-testid = "movie-release-date">{details.release_date}</p>
+       <img src= {IMGPATH + details.poster_path} />
+          <p className='tagline' data-testid = "movie-runtime"> {details.runtime}</p>
          
-          <div className='over'>
-             <h3>Details</h3>
+          <div className='over' data-testid = "movie-overview">
           {details.overview}
           </div>
        </div>
